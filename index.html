@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>einfachflippi – Offizielle Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #ff2c55;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    nav {
+      background-color: #fff0f3;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav a {
+      color: #ff2c55;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff2c55;
+      font-size: 1.8em;
+    }
+    .video-container iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .social-links a {
+      margin: 8px 12px;
+      color: #ff2c55;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    input, textarea, button {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 10px 0;
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .community-section {
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #ff2c55;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>einfachflippi</h1>
+    <p>Willkommen auf meiner offiziellen Website – hier findest du alles über mich, meine Videos, Termine und wie du ein Teil der Community wirst!</p>
+  </header>
+
+  <nav>
+    <a href="#about">Über mich</a>
+    <a href="#videos">Videos</a>
+    <a href="#termine">Termine</a>
+    <a href="#social">Socials</a>
+    <a href="#community">Community</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="about">
+    <h2>Über mich</h2>
+    <p>Hi! Ich bin Flippi – YouTuber mit einer Leidenschaft für Unterhaltung und Comedy. Auf diesem Kanal teile ich spannende Inhalte, lustige Videos und binde meine Community aktiv ein. Folge mir auf meinen sozialen Kanälen, um immer auf dem neuesten Stand zu bleiben!</p>
+  </section>
+
+  <section id="videos">
+    <h2>Neue Videos</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=einfachflippi" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="termine">
+    <h2>Termine</h2>
+    <div id="event-list">
+      <ul>
+        <li>10. April 2025 – Fortnite challenge YouTube</li>
+        <li>14. April 2025 – Start fifa Karriere </li>
+        <li>20. April 2025 – Vielleit erster twitch stream</li>
+      </ul>
+    </div>
+    <p>Die Termine kannst du selbst anpassen, indem du den HTML-Code bearbeitest!</p>
+  </section>
+
+  <section id="social">
+    <h2>Folg mir auf Social Media</h2>
+    <div class="social-links">
+      <a href="https://youtube.com/@einfachflippi" target="_blank">YouTube</a>
+      <a href="https://instagram.com/einfachflippi" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/@einfachflippi" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <section id="community" class="community-section">
+    <h2>Werde Teil der Community!</h2>
+    <p>Du willst in einem meiner Videos mit dabei sein? Fülle das Formular aus und bewerbe dich für ein Video-Collab!</p>
+    <form id="community-form">
+      <input type="text" id="community-name" placeholder="Dein Name" required />
+      <input type="email" id="community-email" placeholder="Deine E-Mail" required />
+      <textarea id="community-message" rows="4" placeholder="Warum solltest du im Video mitmachen?" required></textarea>
+      <button type="submit">Bewerben</button>
+    </form>
+  </section>
+
+  <section id="kontakt">
+    <h2>Fragen? Schreib mir!</h2>
+    <form>
+      <input type="text" placeholder="Dein Name" required />
+      <input type="email" placeholder="Deine E-Mail" required />
+      <textarea rows="5" placeholder="Deine Nachricht" required></textarea>
+      <button type="submit">Absenden</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 einfachflippi. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>
+    document.getElementById('community-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Danke für deine Bewerbung! Wir melden uns bei dir.');
+      document.getElementById('community-form').reset();
+    });
+  </script>
+
+</body>
+</html>
